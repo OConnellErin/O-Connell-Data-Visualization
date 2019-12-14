@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Zagster Bikes in Bend</title>
+        <title>Zagster Bikes in Bend by Hour</title>
        
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
         </script> 
@@ -10,15 +10,12 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+        <h1>Zagster Bike Rentals by Hour of the Day</h1>
 
-        <canvas id=myChart> </canvas>
-        <h2 id="rideCount">TODO</h2>
-      
-        <img src="BendMap.jpg" alt="BendMap" height="250" width="250">
-        <img src="Bike - Copy (2).png" alt="Bike2" height="50" width="50">
-        <img src="Bike - Copy.png" alt="Bike" height="50" width="50">
-        <img src="Drawing.jpg" alt="Drawing" height="500" width="500"
-        <p2> Click on a Zagster station to see the most trafficked routes in bend, Oregon</p2>
-        <p>This is going to be a large map of bend. Zagster bikes will be highlighted and there will be doodles of bike around where the most popular routes are.</p>
+        <div class="chartContainer">
+          <canvas id="myChart" width="600px"></canvas>
+        </div>
+    <h2>About</h2>
+        <p>Here is a data visualization of the most popular times for Zagster bike rentals. It is organized by the amount of rentals in the y axis and the time of day in the x axis. This information is harvested from the database from the Zagster Service Heroku App. The graph will update as the database does. It froms this graph by using the jquery library. </p>
     </body>
 </html>
